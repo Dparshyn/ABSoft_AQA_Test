@@ -14,7 +14,7 @@ Test case based on Selenium and PyTest
 # How to install and setup:
 First of all you need to copy latest version of ChromeDriver in project directory or use valid PATH to Driver as shown in project:
 ```
-webdriver.Chrome(executable_path=**"./chromedriver"**)
+webdriver.Chrome(executable_path="./chromedriver")
 ```
 Latest driver version you can find here https://chromedriver.chromium.org/downloads 
 
