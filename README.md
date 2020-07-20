@@ -28,7 +28,8 @@ Please run the test by using bash-command:
 $ pytest -v -s test_send_mail.py
 ```
 
-Due to domain https://aws.random.cat/meow is unavailable while developing this test, 
+Due to domain https://aws.random.cat/meow is unavailable while developing this test, URL-generating for this link was skipped.
 
-**Enjoy it and have a nice mood (^.^)**
+
+**Have a nice day!**
 
