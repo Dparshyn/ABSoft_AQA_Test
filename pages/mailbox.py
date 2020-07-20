@@ -1,4 +1,4 @@
-from pages.baseApp import *
+from pages.base_app import *
 from pages.pageLocators import SearchLocators
 
 

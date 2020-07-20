@@ -1,15 +1,10 @@
 import pytest
-from source.send_mail import *
+from source import send_mail
 from pages.mailbox import Mailbox
 from source.animal_api import *
 
+@py.fixture(scope="session")
+def test_email_valid(@py.fixture):
+   variables = your_fixture
+   assert is_email_valid(variables["email"])
 
-@pytest.fixture()
-def test_send_mail(browser):
-    link = 'https://getnada.com/'
-    page = MailAddress.create_message(browser, link)
-    page.open()
-    mail_box = Mailbox(browser)
-    mail_box.open_message()
-    mail_box.mailbox_content()
-    animal_request()
