@@ -1,5 +1,5 @@
-from pages.baseApp import *
-from pages.pageLocators import SearchLocators
+from pages.base_app import BasePage
+from pages.page_locators import SearchLocators
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import smtplib

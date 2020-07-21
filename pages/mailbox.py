@@ -1,5 +1,5 @@
-from pages.base_app import *
-from pages.pageLocators import SearchLocators
+from pages.base_app import BasePage
+from pages.page_locators import SearchLocators
 
 
 class Mailbox(BasePage):
