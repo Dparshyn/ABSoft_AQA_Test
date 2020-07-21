@@ -1,6 +1,6 @@
-from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+from pages.page_locators import SearchLocators
 
 
 class BasePage:
@@ -13,17 +13,11 @@ class BasePage:
         self.driver.get(self.base_url)
 
     def find_element(self, locator, time=10):
-        try:
-            element = WebDriverWait(self.driver, time).until(
-                EC.presence_of_element_located((locator)))
-        except TimeoutException:
-            return False
+        element = WebDriverWait(self.driver, 20).until(
+                EC.presence_of_element_located(SearchLocators.E_MAIL))
         return element
 
     def click_element(self, locator, time=15):
-        try:
-            element = WebDriverWait(self.driver, time).until(
-                EC.element_to_be_clickable((locator)))
-        except TimeoutException:
-            return False
+        element = WebDriverWait(self.driver, 20).until(
+            EC.element_to_be_clickable(SearchLocators.GO_TO_EMAIL_BOX))
         return element

@@ -3,7 +3,7 @@ from selenium import webdriver
 
 def animal_request():
     link = []
-    driver = webdriver.Chrome("./chromedriver")
+    driver = webdriver.Opera()
     driver.get("https://random.dog/woof.json")
     elemdog = driver.find_element_by_tag_name("pre")
     random_dog = elemdog.text.split('"')[-2]
