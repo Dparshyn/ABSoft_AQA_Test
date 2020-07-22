@@ -11,8 +11,7 @@ class MailAddress(BasePage):
         msg = MIMEMultipart()
         receiver = self.find_element(SearchLocators.E_MAIL).text
         sender = "absofttest67@gmail.com"
-        # password = input("Please input your password to mailbox absofttest67@gmail.com:  ")
-        password = "ABSoft123"
+        password = input("Please input your password to mailbox absofttest67@gmail.com: ")
         message = f'{animal_request()}'
         msg['Subject'] = "TEST LINKS"
         msg.attach(MIMEText(message, 'plain'))

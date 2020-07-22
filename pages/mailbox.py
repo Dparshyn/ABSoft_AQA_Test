@@ -8,6 +8,5 @@ class Mailbox(BasePage):
         element.click()
 
     def mailbox_content(self):
-        elements = self.driver.find_element(*SearchLocators.E_MAIL_CONTENT)
-        print(elements)
+        elements = self.driver.find_elements(*SearchLocators.E_MAIL_CONTENT)
         return elements
