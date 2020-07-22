@@ -8,5 +8,6 @@ class Mailbox(BasePage):
         element.click()
 
     def mailbox_content(self):
-        elements = self.driver.find_elements(SearchLocators.E_MAIL_CONTENT)
-        assert len(elements) > 0
+        elements = self.driver.find_element(*SearchLocators.E_MAIL_CONTENT)
+        print(elements)
+        return elements

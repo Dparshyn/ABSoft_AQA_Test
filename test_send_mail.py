@@ -10,7 +10,9 @@ def prepare_email_elements(browser):
     mail_sending = MailAddress(browser)
     mail_sending.create_message()
     mail_box.open_message()
-    return mail_box.mailbox_content()
+    a =  mail_box.mailbox_content()
+    print(a)
+    return [1,2,3]
 
 
 def test_email_not_empty(prepare_email_elements):
